@@ -34,6 +34,35 @@ table{font-size:15px}
 td.number{font-size:17px}
 td,th{padding:12px 10px}
 }
+
+/* 履歴・分析：ボーダー数値を優先した表表示 */
+#history .table-wrap{border:1px solid #d9e3dd;border-radius:9px}
+#history table{border-collapse:separate;border-spacing:0}
+#history th{font-size:15px;font-weight:700;color:#304b3b;padding:15px 18px;border-bottom:2px solid #cbd9d0}
+#history td{padding:17px 18px;border-bottom:1px solid #dfe7e2}
+#history td.number{font-size:24px;font-weight:750;line-height:1.5;letter-spacing:.3px;font-variant-numeric:tabular-nums;min-width:145px}
+#history tbody tr:nth-child(even){background:#f7f9f8}
+#history tbody tr:hover{background:#edf4ee}
+#historyTable th:nth-child(2),#weekdayTable th:nth-child(2){background:#e1f3ec;color:#135d48}
+#historyTable th:nth-child(3),#weekdayTable th:nth-child(3){background:#e5eefc;color:#294e86}
+#historyTable th:nth-child(4),#weekdayTable th:nth-child(4){background:#fff0d8;color:#77501a}
+#historyTable td:nth-child(2),#weekdayTable td:nth-child(2){color:#135d48;background:#ecf8f280}
+#historyTable td:nth-child(3),#weekdayTable td:nth-child(3){color:#294e86;background:#eef3fd80}
+#historyTable td:nth-child(4),#weekdayTable td:nth-child(4){color:#77501a;background:#fff7e780}
+#weekdayTable td.number small{display:block;font-size:13px;font-weight:500;letter-spacing:0;color:#52695b}
+#summary td:last-child{font-size:16px;font-weight:500;min-width:90px}
+#summary td:first-child{font-size:20px}
+#historyTable td:first-child{font-size:16px}
+#historyTable td:first-child small{display:block;font-size:16px;color:#405c4a}
+#history td:first-child,#history th:first-child{position:sticky;left:0;z-index:1;background:#f6f9f7;box-shadow:2px 0 0 #dfe7e2}
+#historyTable td.notes{font-size:13px;font-weight:400}
+@media(max-width:700px){
+#history td.number{font-size:22px;min-width:132px}
+#history td,#history th{padding:14px 12px}
+#historyTable td:first-child{font-size:14px}
+#historyTable td:first-child small{font-size:15px}
+#history .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
 </style></head>
 <body><aside class="sidebar"><a class="brand" href="#home"><span class="logo">B<span>n</span></span><span>Border Note<small>IRIAM ボーダー記録</small></span></a><div class="nav-label">WORKSPACE</div><nav><button class="active" data-view="home">◫ <span>ダッシュボード</span></button><button data-view="history">≡ <span>履歴・分析</span></button><button data-view="settings">⚙ <span>データ管理</span></button></nav><div class="side-bottom"><span class="dot"></span> 公開閲覧・編集者限定<br><small>記録を積み重ねて、傾向を知る。</small></div></aside>
 <main><header><div><span class="eyebrow">IRIAM / BORDER TRACKER</span><h1 id="pageTitle">ダッシュボード</h1></div><button id="authButton">編集者ログイン</button></header><div id="connection" class="notice" role="status">読み込み中…</div>
