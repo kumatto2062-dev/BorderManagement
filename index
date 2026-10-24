@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#176b5b"><title>IRIAM Border Note | ボーダー記録</title><style>*{box-sizing:border-box}body{margin:0;background:#f5f6f8;color:#273a39;font:14px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer;background:white;color:#344b47;border:1px solid #dce4e1;border-radius:8px;padding:9px 15px;font-weight:600}button:hover{background:#edf4f1}button:disabled{cursor:not-allowed;opacity:.45}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #5fb9a4;outline-offset:2px}.primary{background:#176b5b;color:white;border-color:#176b5b}.primary:hover{background:#115343}.danger{color:#b43e49}.sidebar{position:fixed;inset:0 auto 0 0;width:228px;background:white;border-right:1px solid #e2e7e5;padding:34px 22px}.brand{display:flex;gap:12px;align-items:center;color:#163e36;text-decoration:none;font-size:19px;font-weight:750;letter-spacing:-.5px}.brand small{display:block;font-size:10px;font-weight:500;letter-spacing:1px;color:#7b8b87}.logo{display:grid;place-content:center;width:42px;height:44px;background:#176b5b;border-radius:12px;color:white;font-size:27px;position:relative}.logo span{position:absolute;right:5px;bottom:1px;font-size:18px;color:#acd9b8}.nav-label{font-size:10px;letter-spacing:2px;color:#9ba7a3;margin:52px 12px 16px}nav button{width:100%;display:flex;align-items:center;gap:14px;text-align:left;border:0;margin-bottom:9px;padding:13px;font-size:18px}nav span{font-size:13px}nav .active{color:#176b5b;background:#e9f3ed}.side-bottom{position:absolute;bottom:32px;font-size:11px;color:#57786c}.side-bottom small{font-size:10px;color:#889791}.dot{display:inline-block;width:6px;height:6px;background:#3d9577;border-radius:50%;margin-right:6px}main{margin-left:228px;padding:35px 42px;max-width:1700px}header{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}.eyebrow{font-size:10px;letter-spacing:2px;color:#7c8e87;font-weight:700}h1{font-size:27px;letter-spacing:-1px;margin:5px 0}h2{font-size:16px;margin:0 0 5px}p{color:#71817c;margin:5px 0 16px;font-size:12px}.notice{padding:11px 15px;background:#edf2f0;border:1px solid #dbe6e0;border-radius:8px;font-size:12px;margin-bottom:24px;color:#527568}.notice.bad{background:#fff1ef;color:#a23e39}.filters{display:flex;gap:14px;align-items:end;margin:22px 0;flex-wrap:wrap}label{display:block;font-size:11px;color:#677c74;font-weight:600}input,select,textarea{display:block;border:1px solid #dce4e0;border-radius:7px;padding:9px 12px;background:white;color:#304c42;width:100%;min-height:41px;margin-top:5px}input[type=checkbox]{width:17px;min-height:auto;margin:0}select{min-width:110px}.section-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:25px 0 17px}.section-head p{margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.metric{padding:21px 24px;background:white;border:1px solid #e4e9e6;border-radius:12px;position:relative;overflow:hidden}.metric:before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--color)}.metric .num{font-size:32px;letter-spacing:-1px;font-weight:700;margin:12px 0 8px;font-variant-numeric:tabular-nums}.metric .num small{font-size:12px;color:#93a19b;font-weight:500;letter-spacing:0}.metric .tag{color:var(--color);font-weight:700;font-size:12px}.metric p{margin:0}.panel{background:white;border:1px solid #e2e8e4;border-radius:12px;padding:23px;margin-top:23px;min-width:0}.panel>.section-head{margin:0 0 20px}.dashboard-grid{display:grid;grid-template-columns:minmax(0,2.5fr) minmax(235px,1fr);gap:22px}.legend{display:flex;gap:13px;font-size:10px;white-space:nowrap}.legend span:nth-child(1){color:#279783}.legend span:nth-child(2){color:#6489ca}.legend span:nth-child(3){color:#c39553}#chart svg{width:100%;height:auto;display:block}.caption{font-size:11px;margin:14px 0 0;color:#82928b}.insight{background:#eef4ef}.insight h2{font-size:23px;margin-top:8px}.insight-row{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid #dce7de}.insight-row b{font-size:20px}.insight-row small{display:block;text-align:right;font-size:10px;color:#8b9b92}.insight>small{display:block;font-size:10px;color:#7a8d81;margin-top:22px}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap}th{text-align:left;color:#8a9992;font-weight:500;background:#f8faf8;font-size:11px}td,th{padding:13px 12px;border-bottom:1px solid #eef1ee}td.number{text-align:right;font-variant-numeric:tabular-nums}td.notes{white-space:normal;min-width:170px;max-width:350px;color:#72877a;overflow-wrap:anywhere}td small{color:#91a198}td button{font-size:11px;padding:4px 9px}td .pill{background:#edf3f0;border-radius:4px;padding:2px 5px;font-size:10px}.pagination{display:flex;justify-content:center;align-items:center;gap:20px;margin-top:20px;font-size:12px}.secondary{margin:15px 0}.search{flex:1;min-width:180px}.check{display:flex;align-items:center;gap:8px;padding-bottom:12px}.empty{text-align:center;padding:50px 12px;color:#889a90;font-size:13px}footer{margin-top:38px;padding-top:18px;border-top:1px solid #e2e7e3;color:#8b9a92;font-size:11px}footer span{float:right;font-size:10px}dialog{border:0;border-radius:15px;padding:25px;max-width:540px;width:calc(100% - 24px);box-shadow:0 20px 90px #16352d33}dialog::backdrop{background:#14342b66;backdrop-filter:blur(3px)}dialog .section-head{margin:0 0 15px}dialog label{margin-bottom:12px}.form-row{display:flex;gap:15px}.form-row>*{flex:1;min-width:0}.form-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:20px}.error{color:#b14643;white-space:pre-wrap}#toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);background:#203f34;color:white;padding:13px 23px;border-radius:10px;z-index:50;max-width:90vw;font-size:13px}#accountInfo{overflow-wrap:anywhere}#filters[hidden],.view[hidden]{display:none}
+@media(min-width:1500px){main{padding-left:60px;padding-right:60px}}@media(max-width:1100px){.sidebar{width:192px;padding:28px 15px}main{margin-left:192px;padding:25px}.dashboard-grid{grid-template-columns:1fr}.insight{display:none}#settings .dashboard-grid{display:block}.metric .num{font-size:26px}.legend{gap:8px}}
+@media(max-width:700px){.sidebar{position:sticky;top:0;z-index:5;width:100%;height:auto;padding:12px 16px;border-right:0;border-bottom:1px solid #dfe6e2;display:flex;align-items:center;justify-content:space-between}.brand{font-size:14px}.brand small,.nav-label,.side-bottom{display:none}.logo{width:32px;height:33px;font-size:22px}nav{display:flex;gap:3px}nav button{width:auto;margin:0;padding:9px;font-size:16px}nav span{display:none}main{margin:0;padding:22px 15px}h1{font-size:22px}header button{font-size:11px;padding:8px}.eyebrow{font-size:9px}.filters{gap:10px}.filters label{flex:1;min-width:135px}select{min-width:0}.cards{gap:8px}.metric{padding:14px 10px}.metric .num{font-size:19px;letter-spacing:-.6px;margin:10px 0}.metric .num small{font-size:9px}.metric p{font-size:9px}.metric .tag{font-size:11px}.panel{padding:16px;margin-top:15px}.section-head{gap:8px}.section-head button{font-size:11px;padding:8px 10px}.chart-panel .section-head{display:block}.legend{margin-top:12px}.dashboard-grid{gap:0}.form-actions{flex-wrap:wrap}footer span{float:none;display:block}.check{padding-top:10px}.notice{font-size:11px}.points{gap:8px}}
+</style></head>
+<body><aside class="sidebar"><a class="brand" href="#home"><span class="logo">B<span>n</span></span><span>Border Note<small>IRIAM ボーダー記録</small></span></a><div class="nav-label">WORKSPACE</div><nav><button class="active" data-view="home">◫ <span>ダッシュボード</span></button><button data-view="history">≡ <span>履歴・分析</span></button><button data-view="settings">⚙ <span>データ管理</span></button></nav><div class="side-bottom"><span class="dot"></span> 公開閲覧・編集者限定<br><small>記録を積み重ねて、傾向を知る。</small></div></aside>
+<main><header><div><span class="eyebrow">IRIAM / BORDER TRACKER</span><h1 id="pageTitle">ダッシュボード</h1></div><button id="authButton">編集者ログイン</button></header><div id="connection" class="notice" role="status">読み込み中…</div>
+<section id="filters" class="filters"><label>ランク<select id="rank"><option>S2</option><option>S1</option><option>S3</option></select></label><label>集計期間<select id="period"><option value="all">全期間</option><option value="30">直近30日</option><option value="90">直近90日</option><option value="custom">期間を指定</option></select></label><label>開始日<input id="start" type="date"></label><label>終了日<input id="end" type="date"></label><label>曜日<select id="day"><option value="">すべて</option><option value="1">月曜日</option><option value="2">火曜日</option><option value="3">水曜日</option><option value="4">木曜日</option><option value="5">金曜日</option><option value="6">土曜日</option><option value="0">日曜日</option></select></label></section>
+<section id="home" class="view"><div class="section-head"><div><h2>最新のボーダー</h2><p id="latestDate">—</p></div><button class="primary newRecord">＋ 記録を追加</button></div><div id="cards" class="cards"></div><div class="dashboard-grid"><article class="panel chart-panel"><div class="section-head"><div><h2>ボーダーの推移</h2><p>選択した期間の実測値</p></div><div class="legend"><span>● ＋2</span><span>● ＋4</span><span>● ＋6</span></div></div><div id="chart"></div><p class="caption">未記録日は線をつなぎません。過去の数値は参考値です。</p></article><article class="panel insight"><span class="eyebrow">WEEKDAY INSIGHT</span><h2 id="weekdayTitle">今日と同じ曜日</h2><p>選択期間・ランクの平均</p><div id="weekdayCards"></div><small>曜日フィルターとは独立して集計。<br>当日の確定ボーダーではありません。</small></article></div><article class="panel"><div class="section-head"><div><h2>最近の記録</h2><p>選択条件に一致する最新5件</p></div><button id="toHistory">履歴をすべて見る →</button></div><div id="recentTable"></div></article></section>
+<section id="history" class="view" hidden><div class="section-head"><div><h2>履歴・分析</h2><p id="recordCount"></p></div><button class="primary newRecord">＋ 記録を追加</button></div><div class="filters secondary"><label class="search">備考・タグ・引用元を検索<input id="query" placeholder="イベント名、スキパなど"></label><label class="check"><input id="exclude" type="checkbox">タグのある日を除外</label><button id="exportCSV">絞り込み結果をCSV出力</button></div><article class="panel"><h2>期間内の統計</h2><div id="summary"></div></article><article class="panel"><h2>曜日別の比較</h2><p>各ボーダーで、数値がある記録のみを集計します。</p><div id="weekdayTable"></div></article><article class="panel"><div id="historyTable"></div><div class="pagination"><button id="prev">← 前へ</button><span id="pageInfo"></span><button id="next">次へ →</button></div></article><p id="missing" class="caption"></p></section>
+<section id="settings" class="view" hidden><article class="panel"><span class="eyebrow">DATA & ACCESS</span><h2>データ管理</h2><p id="accountInfo">ログインせずに、すべての記録を閲覧できます。</p><p>備考・タグ・引用元も公開されます。個人情報は入力しないでください。</p></article><div class="dashboard-grid"><article class="panel"><h2>初期データを登録</h2><p>添付Excelから抽出したS1・S2・S3の記録を取り込みます。ウェルパ・バッジは含みません。</p><p id="seedCount"></p><button id="seedImport" class="primary">Excelの初期データを取り込む</button><p class="caption">同じ日付・ランクの既存記録は上書きしません。</p></article><article class="panel"><h2>ファイルから取り込む</h2><p>元のExcelと同じS1／S2／S3シート、または本サイトのJSONバックアップに対応します。</p><input id="importFile" type="file" accept=".xlsx,.json" aria-label="取り込むファイル"><p class="caption">取込前に件数を表示します。重複はスキップします。Excelの備考は元の文章を保持します。</p></article></div><article class="panel"><h2>バックアップ</h2><p>全ランク・全期間の記録をJSONで保存します。CSVは「履歴・分析」から出力できます。</p><button id="exportJSON">JSONバックアップを保存</button></article><article class="panel"><h2>接続設定について</h2><p>Firebaseの接続情報・管理者UIDは設定済みです。以下の手順でデータベースルールを設定してからログインしてください。</p><p>このHTMLをindex.htmlに変更してGitHub Pagesへアップロードしてください。Authenticationのメール／パスワード認証を有効にし、承認済みドメインに公開先のホスト名（例：ユーザー名.github.io）を追加してください。</p></article><article class="panel"><h2>初回設定：データベースルール</h2><p>Firebaseコンソール → Realtime Database →「ルール」に下記を貼り付けて「公開」してください。指定の管理者UIDと、editorsで許可したUIDのみが編集できます。</p><p>このルールはボーダー管理専用です。同じデータベースで他のサイトを運用している場合は、既存ルールをそのまま置き換えず統合が必要です。</p><textarea id="rulesText" rows="12" readonly aria-label="Firebaseデータベースルール">{
+  &quot;rules&quot;: {
+    &quot;.read&quot;: false,
+    &quot;.write&quot;: false,
+    &quot;borderNote&quot;: {
+      &quot;editors&quot;: {
+        &quot;$uid&quot;: {
+          &quot;.read&quot;: &quot;auth != null &amp;&amp; auth.uid === $uid&quot;,
+          &quot;.write&quot;: false
+        }
+      },
+      &quot;records&quot;: {
+        &quot;.read&quot;: true,
+        &quot;$id&quot;: {
+          &quot;.write&quot;: &quot;auth != null &amp;&amp; (auth.uid === &#x27;vMb3v8PkNYQbQj9P56fbmRxlToz2&#x27; || root.child(&#x27;borderNote/editors&#x27;).child(auth.uid).val() === true)&quot;,
+          &quot;.validate&quot;: &quot;newData.hasChildren([&#x27;date&#x27;,&#x27;rank&#x27;,&#x27;revision&#x27;,&#x27;updatedAt&#x27;]) &amp;&amp; $id === newData.child(&#x27;rank&#x27;).val() + &#x27;_&#x27; + newData.child(&#x27;date&#x27;).val()&quot;,
+          &quot;date&quot;: {
+            &quot;.validate&quot;: &quot;newData.isString() &amp;&amp; newData.val().matches(/^20[0-9]{2}-[0-9]{2}-[0-9]{2}$/)&quot;
+          },
+          &quot;rank&quot;: {
+            &quot;.validate&quot;: &quot;newData.val() === &#x27;S1&#x27; || newData.val() === &#x27;S2&#x27; || newData.val() === &#x27;S3&#x27;&quot;
+          },
+          &quot;revision&quot;: {
+            &quot;.validate&quot;: &quot;newData.isNumber() &amp;&amp; ((!data.exists() &amp;&amp; newData.val() === 1) || (data.exists() &amp;&amp; newData.val() === data.val() + 1))&quot;
+          },
+          &quot;updatedAt&quot;: {
+            &quot;.validate&quot;: &quot;newData.isNumber() &amp;&amp; newData.val() === now&quot;
+          },
+          &quot;$other&quot;: {
+            &quot;.validate&quot;: false
+          },
+          &quot;p2&quot;: {
+            &quot;.validate&quot;: &quot;newData.isNumber() &amp;&amp; newData.val() &gt;= 0 &amp;&amp; newData.val() &lt;= 999999999 &amp;&amp; newData.val() % 1 === 0&quot;
+          },
+          &quot;p4&quot;: {
+            &quot;.validate&quot;: &quot;newData.isNumber() &amp;&amp; newData.val() &gt;= 0 &amp;&amp; newData.val() &lt;= 999999999 &amp;&amp; newData.val() % 1 === 0&quot;
+          },
+          &quot;p6&quot;: {
+            &quot;.validate&quot;: &quot;newData.isNumber() &amp;&amp; newData.val() &gt;= 0 &amp;&amp; newData.val() &lt;= 999999999 &amp;&amp; newData.val() % 1 === 0&quot;
+          },
+          &quot;tags&quot;: {
+            &quot;.validate&quot;: &quot;newData.isString() &amp;&amp; newData.val().length &lt;= 1000&quot;
+          },
+          &quot;source&quot;: {
+            &quot;.validate&quot;: &quot;newData.isString() &amp;&amp; newData.val().length &lt;= 1000&quot;
+          },
+          &quot;note&quot;: {
+            &quot;.validate&quot;: &quot;newData.isString() &amp;&amp; newData.val().length &lt;= 1000&quot;
+          }
+        }
+      }
+    }
+  }
+}</textarea><button id="copyRules">ルールをコピー</button><h2 style="margin-top:24px">初期データを登録する</h2><ol><li>上記ルールを公開します。</li><li>指定UIDのアカウントで「編集者ログイン」します。</li><li>この画面の「Excelの初期データを取り込む」で97件を登録します。</li></ol><p>HTML単体版で追加した記録は、自動では共有されません。単体版でJSONバックアップを出力し、この共有版で取り込んでください。同じ日付・ランクはスキップされます。</p><p>追加の編集者はAuthenticationでユーザーを作成し、Realtime Databaseの borderNote/editors/そのUID に真偽値 true を設定します。管理者のUIDはルールに組み込み済みのため、管理者自身のeditors登録は不要です。</p></article></section>
+<footer>Border Note <span>IRIAM 非公式の個人用記録ツール</span></footer></main>
+<dialog id="recordDialog"><form id="recordForm"><div class="section-head"><h2 id="formTitle">記録を追加</h2><button type="button" data-close="recordDialog" aria-label="閉じる">×</button></div><div class="form-row"><label>日付<input name="date" type="date" required></label><label>ランク<select name="rank"><option>S1</option><option>S2</option><option>S3</option></select></label></div><p id="duplicateHint" class="caption"></p><div class="form-row points"><label>＋2<input name="p2" type="number" min="0" max="999999999" step="1" placeholder="未記録"></label><label>＋4<input name="p4" type="number" min="0" max="999999999" step="1" placeholder="未記録"></label><label>＋6<input name="p6" type="number" min="0" max="999999999" step="1" placeholder="未記録"></label></div><label>タグ<input name="tags" maxlength="1000" placeholder="例：祝日、イベント開始"></label><label>引用元<input name="source" maxlength="1000" placeholder="例：Xの投稿URL、情報提供者"></label><label>備考<textarea name="note" rows="3" maxlength="1000" placeholder="終盤の変化、スキパなど"></textarea></label><p class="caption">空欄は未記録として扱います。備考も公開されます。</p><p id="formError" role="alert" class="error"></p><div class="form-actions"><button type="button" id="deleteRecord" class="danger" hidden>削除</button><button type="submit" value="next">保存して翌日へ</button><button type="submit" value="save" class="primary">保存</button></div></form></dialog>
+<dialog id="loginDialog"><form id="loginForm"><div class="section-head"><h2>編集者ログイン</h2><button type="button" data-close="loginDialog" aria-label="閉じる">×</button></div><p>管理者から許可されたアカウントでログインしてください。</p><label>メールアドレス<input name="email" type="email" autocomplete="username" required></label><label>パスワード<input name="password" type="password" autocomplete="current-password" required></label><p id="loginError" role="alert" class="error"></p><button class="primary" type="submit">ログイン</button></form></dialog><div id="toast" role="status" hidden></div><script>window.FIREBASE_CONFIG = {"apiKey": "AIzaSyB6SdGnGZHAdEFYkjqJgJyqNWKW6tX0UuU", "authDomain": "bordermanagement-ecc46.firebaseapp.com", "databaseURL": "https://bordermanagement-ecc46-default-rtdb.firebaseio.com/", "projectId": "bordermanagement-ecc46", "storageBucket": "bordermanagement-ecc46.firebasestorage.app", "messagingSenderId": "1008015540514", "appId": "1:1008015540514:web:6bb448f77a9b9b541e257b", "measurementId": "G-MGJ2717PMP"};
+window.BORDER_SEED = [
+  {
+    "date": "2026-09-16",
+    "rank": "S1",
+    "p2": 77132.0,
+    "p4": 150161.0,
+    "p6": 301446.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-17",
+    "rank": "S1",
+    "p2": 88067.0,
+    "p4": 171934.0,
+    "p6": 307770.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-07-07",
+    "rank": "S2",
+    "p2": 133312.0,
+    "p4": 191367.0,
+    "p6": 297677.0,
+    "tags": "",
+    "source": "",
+    "note": "なまず様引用"
+  },
+  {
+    "date": "2026-07-08",
+    "rank": "S2",
+    "p2": 124660.0,
+    "p4": 190101.0,
+    "p6": 315692.0,
+    "tags": "",
+    "source": "",
+    "note": "なまず様引用"
+  },
+  {
+    "date": "2026-07-09",
+    "rank": "S2",
+    "p2": 102076.0,
+    "p4": 190636.0,
+    "p6": 290494.0,
+    "tags": "",
+    "source": "",
+    "note": "なまず様引用"
+  },
+  {
+    "date": "2026-07-10",
+    "rank": "S2",
+    "p2": 107814.0,
+    "p4": 199313.0,
+    "p6": 370723.0,
+    "tags": "",
+    "source": "",
+    "note": "なまず様引用"
+  },
+  {
+    "date": "2026-07-11",
+    "rank": "S2",
+    "p2": 111056.0,
+    "p4": 207361.0,
+    "p6": 394920.0,
+    "tags": "",
+    "source": "",
+    "note": "なまず様引用"
+  },
+  {
+    "date": "2026-07-12",
+    "rank": "S2",
+    "p2": 100271.0,
+    "p4": 182017.0,
+    "p6": 329921.0,
+    "tags": "",
+    "source": "",
+    "note": "なまず様引用"
+  },
+  {
+    "date": "2026-07-13",
+    "rank": "S2",
+    "p2": 98458.0,
+    "p4": 180576.0,
+    "p6": 448541.0,
+    "tags": "",
+    "source": "",
+    "note": "なまず様引用"
+  },
+  {
+    "date": "2026-07-14",
+    "rank": "S2",
+    "p2": 93185.0,
+    "p4": 192542.0,
+    "p6": 352741.0,
+    "tags": "",
+    "source": "",
+    "note": "なまず様引用"
+  },
+  {
+    "date": "2026-07-15",
+    "rank": "S2",
+    "p2": 104848.0,
+    "p4": 184294.0,
+    "p6": 327351.0,
+    "tags": "",
+    "source": "",
+    "note": "なまず様引用"
+  },
+  {
+    "date": "2026-07-16",
+    "rank": "S2",
+    "p2": 141786.0,
+    "p4": 220144.0,
+    "p6": 369492.0,
+    "tags": "",
+    "source": "",
+    "note": "なまず様引用"
+  },
+  {
+    "date": "2026-07-17",
+    "rank": "S2",
+    "p2": 122164.0,
+    "p4": 219024.0,
+    "p6": 415968.0,
+    "tags": "",
+    "source": "",
+    "note": "なまず様引用"
+  },
+  {
+    "date": "2026-07-19",
+    "rank": "S2",
+    "p2": 130638.0,
+    "p4": 224589.0,
+    "p6": 395621.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-07-20",
+    "rank": "S2",
+    "p2": 154535.0,
+    "p4": 293040.0,
+    "p6": 699256.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-07-22",
+    "rank": "S2",
+    "p2": 103704.0,
+    "p4": 209051.0,
+    "p6": 410849.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-07-23",
+    "rank": "S2",
+    "p2": 103904.0,
+    "p4": 206221.0,
+    "p6": 345305.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-07-24",
+    "rank": "S2",
+    "p2": 122995.0,
+    "p4": 220288.0,
+    "p6": 360867.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-07-25",
+    "rank": "S2",
+    "p2": 131333.0,
+    "p4": 239943.0,
+    "p6": 446140.0,
+    "tags": "",
+    "source": "",
+    "note": "なまず様引用"
+  },
+  {
+    "date": "2026-07-26",
+    "rank": "S2",
+    "p2": 133249.0,
+    "p4": 228447.0,
+    "p6": 397945.0,
+    "tags": "",
+    "source": "",
+    "note": "なまず様引用"
+  },
+  {
+    "date": "2026-07-28",
+    "rank": "S2",
+    "p2": 91778.0,
+    "p4": 180591.0,
+    "p6": 345992.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-07-29",
+    "rank": "S2",
+    "p2": 114583.0,
+    "p4": 224655.0,
+    "p6": 423146.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-07-31",
+    "rank": "S2",
+    "p2": 99392.0,
+    "p4": 177062.0,
+    "p6": 365745.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-04",
+    "rank": "S2",
+    "p2": 125264.0,
+    "p4": 212650.0,
+    "p6": 368483.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-05",
+    "rank": "S2",
+    "p2": 135686.0,
+    "p4": 224768.0,
+    "p6": 419180.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-06",
+    "rank": "S2",
+    "p2": 152446.0,
+    "p4": 247127.0,
+    "p6": 389587.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-07",
+    "rank": "S2",
+    "p2": 122667.0,
+    "p4": 212718.0,
+    "p6": 359599.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-08",
+    "rank": "S2",
+    "p2": 115732.0,
+    "p4": 189196.0,
+    "p6": 378269.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-09",
+    "rank": "S2",
+    "p2": 101085.0,
+    "p4": 180575.0,
+    "p6": 394380.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-10",
+    "rank": "S2",
+    "p2": 106737.0,
+    "p4": 243356.0,
+    "p6": 511327.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-11",
+    "rank": "S2",
+    "p2": 139594.0,
+    "p4": 218504.0,
+    "p6": 365571.0,
+    "tags": "",
+    "source": "",
+    "note": "祝日"
+  },
+  {
+    "date": "2026-08-12",
+    "rank": "S2",
+    "p2": 156763.0,
+    "p4": 233304.0,
+    "p6": 377674.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-13",
+    "rank": "S2",
+    "p2": 131249.0,
+    "p4": 220476.0,
+    "p6": 351339.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-14",
+    "rank": "S2",
+    "p2": 129259.0,
+    "p4": 205128.0,
+    "p6": 378195.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-15",
+    "rank": "S2",
+    "p2": 133220.0,
+    "p4": 220643.0,
+    "p6": 353578.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-16",
+    "rank": "S2",
+    "p2": 145645.0,
+    "p4": 224213.0,
+    "p6": 384164.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-17",
+    "rank": "S2",
+    "p2": 116854.0,
+    "p4": 223267.0,
+    "p6": 521247.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-18",
+    "rank": "S2",
+    "p2": 160000.0,
+    "p4": 253972.0,
+    "p6": 448087.0,
+    "tags": "",
+    "source": "",
+    "note": "駅ポス(梅田)、ドラゴン開始"
+  },
+  {
+    "date": "2026-08-19",
+    "rank": "S2",
+    "p2": null,
+    "p4": 263392.0,
+    "p6": 461526.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-20",
+    "rank": "S2",
+    "p2": 148502.0,
+    "p4": 259467.0,
+    "p6": 416506.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-21",
+    "rank": "S2",
+    "p2": 149729.0,
+    "p4": 236692.0,
+    "p6": 385005.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-22",
+    "rank": "S2",
+    "p2": 140740.0,
+    "p4": 242444.0,
+    "p6": 429372.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-23",
+    "rank": "S2",
+    "p2": 141895.0,
+    "p4": 232584.0,
+    "p6": 435677.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-24",
+    "rank": "S2",
+    "p2": 136159.0,
+    "p4": 334834.0,
+    "p6": 934456.0,
+    "tags": "",
+    "source": "",
+    "note": "スキパ(なまず様引用）"
+  },
+  {
+    "date": "2026-08-25",
+    "rank": "S2",
+    "p2": 152656.0,
+    "p4": 244722.0,
+    "p6": 453933.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-26",
+    "rank": "S2",
+    "p2": 149324.0,
+    "p4": 237700.0,
+    "p6": 420017.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-27",
+    "rank": "S2",
+    "p2": 151956.0,
+    "p4": 248401.0,
+    "p6": 424365.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-28",
+    "rank": "S2",
+    "p2": 153813.0,
+    "p4": 241893.0,
+    "p6": 372283.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-29",
+    "rank": "S2",
+    "p2": 117422.0,
+    "p4": 190252.0,
+    "p6": 352833.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-08-30",
+    "rank": "S2",
+    "p2": null,
+    "p4": null,
+    "p6": null,
+    "tags": "",
+    "source": "",
+    "note": "スキパ"
+  },
+  {
+    "date": "2026-08-31",
+    "rank": "S2",
+    "p2": 171762.0,
+    "p4": 280107.0,
+    "p6": 807038.0,
+    "tags": "",
+    "source": "",
+    "note": "Xより引用"
+  },
+  {
+    "date": "2026-09-01",
+    "rank": "S2",
+    "p2": 112173.0,
+    "p4": 161240.0,
+    "p6": 289743.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-02",
+    "rank": "S2",
+    "p2": 112216.0,
+    "p4": 176054.0,
+    "p6": 343682.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-03",
+    "rank": "S2",
+    "p2": 139265.0,
+    "p4": 205104.0,
+    "p6": 315573.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-04",
+    "rank": "S2",
+    "p2": 115725.0,
+    "p4": 206703.0,
+    "p6": 373579.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-05",
+    "rank": "S2",
+    "p2": 96266.0,
+    "p4": 169577.0,
+    "p6": 494586.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-06",
+    "rank": "S2",
+    "p2": 98171.0,
+    "p4": 192985.0,
+    "p6": 305954.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-07",
+    "rank": "S2",
+    "p2": 72042.0,
+    "p4": 152534.0,
+    "p6": 531396.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-08",
+    "rank": "S2",
+    "p2": 121340.0,
+    "p4": 189191.0,
+    "p6": 302387.0,
+    "tags": "",
+    "source": "",
+    "note": "なまず様引用"
+  },
+  {
+    "date": "2026-09-09",
+    "rank": "S2",
+    "p2": 108959.0,
+    "p4": 198664.0,
+    "p6": 345085.0,
+    "tags": "",
+    "source": "",
+    "note": "なまず様引用"
+  },
+  {
+    "date": "2026-09-10",
+    "rank": "S2",
+    "p2": 111196.0,
+    "p4": 215240.0,
+    "p6": 395619.0,
+    "tags": "",
+    "source": "",
+    "note": "なまず様引用"
+  },
+  {
+    "date": "2026-09-15",
+    "rank": "S2",
+    "p2": null,
+    "p4": null,
+    "p6": null,
+    "tags": "",
+    "source": "",
+    "note": "バースデーイベント開始"
+  },
+  {
+    "date": "2026-09-18",
+    "rank": "S2",
+    "p2": 108565.0,
+    "p4": 222671.0,
+    "p6": 431895.0,
+    "tags": "",
+    "source": "",
+    "note": "S2復帰"
+  },
+  {
+    "date": "2026-09-19",
+    "rank": "S2",
+    "p2": 123534.0,
+    "p4": 212568.0,
+    "p6": 372363.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-09-24",
+    "rank": "S2",
+    "p2": 75631.0,
+    "p4": 168338.0,
+    "p6": 337749.0,
+    "tags": "",
+    "source": "",
+    "note": "S3アップ（なまず様引用）"
+  },
+  {
+    "date": "2026-10-01",
+    "rank": "S2",
+    "p2": 120149.0,
+    "p4": 172636.0,
+    "p6": 261796.0,
+    "tags": "",
+    "source": "",
+    "note": "S2復帰,+6達成"
+  },
+  {
+    "date": "2026-10-02",
+    "rank": "S2",
+    "p2": 95308.0,
+    "p4": 175021.0,
+    "p6": 306739.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-03",
+    "rank": "S2",
+    "p2": 121648.0,
+    "p4": 198160.0,
+    "p6": 337365.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-04",
+    "rank": "S2",
+    "p2": 96186.0,
+    "p4": 188572.0,
+    "p6": 307353.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-05",
+    "rank": "S2",
+    "p2": 70953.0,
+    "p4": 146045.0,
+    "p6": 340553.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-06",
+    "rank": "S2",
+    "p2": 119399.0,
+    "p4": 217020.0,
+    "p6": 404875.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-07",
+    "rank": "S2",
+    "p2": 135178.0,
+    "p4": 236515.0,
+    "p6": 368147.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-08",
+    "rank": "S2",
+    "p2": 104921.0,
+    "p4": 195153.0,
+    "p6": 331909.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-09",
+    "rank": "S2",
+    "p2": 98217.0,
+    "p4": 185127.0,
+    "p6": 335417.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-10",
+    "rank": "S2",
+    "p2": 120539.0,
+    "p4": 210052.0,
+    "p6": 410248.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-11",
+    "rank": "S2",
+    "p2": 132630.0,
+    "p4": 211134.0,
+    "p6": 392458.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-12",
+    "rank": "S2",
+    "p2": 91093.0,
+    "p4": 184899.0,
+    "p6": 477547.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-13",
+    "rank": "S2",
+    "p2": 140914.0,
+    "p4": 274353.0,
+    "p6": 507941.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-14",
+    "rank": "S2",
+    "p2": 146393.0,
+    "p4": 261203.0,
+    "p6": 435729.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-15",
+    "rank": "S2",
+    "p2": 144168.0,
+    "p4": 242832.0,
+    "p6": 419327.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-16",
+    "rank": "S2",
+    "p2": 133196.0,
+    "p4": 226183.0,
+    "p6": 413506.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-17",
+    "rank": "S2",
+    "p2": 138272.0,
+    "p4": 240756.0,
+    "p6": 428337.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-18",
+    "rank": "S2",
+    "p2": 137340.0,
+    "p4": 241857.0,
+    "p6": 455802.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-19",
+    "rank": "S2",
+    "p2": 161798.0,
+    "p4": 418431.0,
+    "p6": 859008.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-10-20",
+    "rank": "S2",
+    "p2": 145854.0,
+    "p4": 248238.0,
+    "p6": 516675.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-07-07",
+    "rank": "S3",
+    "p2": 182152.0,
+    "p4": 283045.0,
+    "p6": 414114.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-07-08",
+    "rank": "S3",
+    "p2": 169915.0,
+    "p4": 290349.0,
+    "p6": 388712.0,
+    "tags": "",
+    "source": "",
+    "note": "最後プラ4微はね(1万程度)"
+  },
+  {
+    "date": "2026-07-09",
+    "rank": "S3",
+    "p2": 172393.0,
+    "p4": 271260.0,
+    "p6": 352118.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-07-10",
+    "rank": "S3",
+    "p2": 178102.0,
+    "p4": 338639.0,
+    "p6": 422152.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-07-11",
+    "rank": "S3",
+    "p2": 184493.0,
+    "p4": 355402.0,
+    "p6": 562167.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-07-12",
+    "rank": "S3",
+    "p2": 160378.0,
+    "p4": 319202.0,
+    "p6": 459259.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-07-13",
+    "rank": "S3",
+    "p2": null,
+    "p4": null,
+    "p6": null,
+    "tags": "",
+    "source": "",
+    "note": "スキパ"
+  },
+  {
+    "date": "2026-07-14",
+    "rank": "S3",
+    "p2": 166177.0,
+    "p4": 320584.0,
+    "p6": 413991.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-07-15",
+    "rank": "S3",
+    "p2": 163942.0,
+    "p4": 289478.0,
+    "p6": 374884.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-07-16",
+    "rank": "S3",
+    "p2": null,
+    "p4": null,
+    "p6": null,
+    "tags": "",
+    "source": "",
+    "note": "元Excel：未記録（－）"
+  },
+  {
+    "date": "2026-07-17",
+    "rank": "S3",
+    "p2": 191856.0,
+    "p4": 371826.0,
+    "p6": 528038.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  },
+  {
+    "date": "2026-07-18",
+    "rank": "S3",
+    "p2": 184308.0,
+    "p4": 332256.0,
+    "p6": 395353.0,
+    "tags": "",
+    "source": "",
+    "note": ""
+  }
+];
+
+(function(root) {
+  const ranks=['S1','S2','S3'];
+  const dateOK=s=>typeof s==='string' && /^\d{4}-\d{2}-\d{2}$/.test(s) && !isNaN(Date.parse(s)) && new Date(s+'T00:00:00Z').toISOString().slice(0,10)===s;
+  const weekday=s=>new Date(s+'T00:00:00Z').getUTCDay();
+  const addDays=(s,n)=>{const d=new Date(s+'T00:00:00Z');d.setUTCDate(d.getUTCDate()+n);return d.toISOString().slice(0,10)};
+  const today=()=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+  const key=r=>r.rank+'_'+r.date;
+  function normalize(r) {
+    if(!r || !ranks.includes(r.rank)||!dateOK(r.date))throw Error('ランクまたは日付が正しくありません。');
+    const out={date:r.date,rank:r.rank};
+    for(const k of ['p2','p4','p6']){
+      const v=r[k];out[k]=(v==null||v===''||v==='-')?null:Number(v);
+      if(out[k]!==null && (!Number.isSafeInteger(out[k])||out[k]<0||out[k]>999999999))throw Error('ポイントは0〜999,999,999の整数で入力してください。');
+    }
+    for(const k of ['tags','source','note']){out[k]=String(r[k]||'');if(out[k].length>1000)throw Error('備考・タグ・引用元は各1000文字以内です。');}
+    if(['p2','p4','p6'].every(k=>out[k]===null)&&!out.note&&!out.tags)throw Error('ポイントまたは備考を入力してください。');
+    return out;
+  }
+  function stats(rows,k){const v=rows.map(r=>r[k]).filter(v=>typeof v==='number').sort((a,b)=>a-b);const n=v.length;return {n,mean:n?v.reduce((a,b)=>a+b,0)/n:null,median:n?(v[Math.floor((n-1)/2)]+v[Math.floor(n/2)])/2:null,min:n?v[0]:null,max:n?v[n-1]:null};}
+  function filter(rows,f){return rows.filter(r=>(!f.rank||r.rank===f.rank)&&(!f.start||r.date>=f.start)&&(!f.end||r.date<=f.end)&&(f.day===''||f.day==null||weekday(r.date)===Number(f.day))&&(!f.exclude||!r.tags)&&(!f.query||[r.note,r.tags,r.source].join(' ').toLowerCase().includes(f.query.toLowerCase()))).sort((a,b)=>a.date.localeCompare(b.date));}
+  const api={ranks,dateOK,weekday,addDays,today,key,normalize,stats,filter};
+  if(typeof module!=='undefined')module.exports=api;else root.BorderCore=api;
+})(globalThis);
+
+'use strict';
+const C=BorderCore, $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt=n=>n==null?'—':Math.round(n).toLocaleString('ja-JP');
+const days=['日','月','火','水','木','金','土'];
+let rows=[],user=null,editor=false,connected=false,ready=false,preview=false,view='home',page=1,busy=false;
+let db,auth,F,A,unsubRole,editKey=null,editRev=null,toastTimer;
+const fields=$('#recordForm').elements;
+function notice(message,bad=false){$('#connection').textContent=message;$('#connection').classList.toggle('bad',bad)}
+function toast(message){$('#toast').textContent=message;$('#toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').hidden=true,5000)}
+function errorText(e){const code=e?.code||'';if(/permission|PERMISSION/i.test(code+' '+e?.message))return '編集権限またはデータベースルールを確認してください。';if(/auth\/(invalid-credential|wrong-password|user-not-found|invalid-email)/.test(code))return 'メールアドレスまたはパスワードが正しくありません。';if(code==='auth/too-many-requests')return '試行回数が多すぎます。しばらく待って再試行してください。';if(/network/.test(code))return '通信できません。ネットワークを確認してください。';return e?.message||'処理に失敗しました。'}
+const writable=()=>editor&&connected&&ready&&!busy;
+function controls(){const ok=writable();$$('.newRecord').forEach(b=>{b.disabled=!ok;b.title=ok?'':preview?'接続設定後に追加できます':'編集権限のあるアカウントでログインしてください'});$('#seedImport').disabled=!ok;$('#importFile').disabled=!ok;$$('#recordForm button[type=submit]').forEach(b=>b.disabled=!ok);$('#deleteRecord').disabled=!ok;$('#authButton').textContent=user?'ログアウト':'編集者ログイン';$('#authButton').disabled=preview||!auth;$('#accountInfo').textContent=user?`ログイン中：${user.email} ／ ${editor?'編集可能':'閲覧のみ'} ／ UID：${user.uid}`:'ログインせずに、すべての記録を閲覧できます。';}
+function filters(){return {rank:$('#rank').value,start:$('#start').value,end:$('#end').value,day:$('#day').value,exclude:$('#exclude').checked,query:$('#query').value.trim()}}
+function selected(){return C.filter(rows,filters())}
+function setView(v){view=v;$$('.view').forEach(el=>el.hidden=el.id!==v);$$('nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===v));$('#filters').hidden=v==='settings';$('#pageTitle').textContent={home:'ダッシュボード',history:'履歴・分析',settings:'データ管理'}[v];render()}
+function table(data){if(!data.length)return '<div class="empty">この条件の記録はありません。期間やランクを変更してください。</div>';return `<div class="table-wrap"><table><thead><tr><th>日付</th><th>＋2</th><th>＋4</th><th>＋6</th><th>備考・引用元</th>${editor?'<th>操作</th>':''}</tr></thead><tbody>${data.map(r=>`<tr><td>${esc(r.date)} <small>(${days[C.weekday(r.date)]})</small></td>${['p2','p4','p6'].map(k=>`<td class="number">${fmt(r[k])}</td>`).join('')}<td class="notes">${r.tags?`<span class="pill">${esc(r.tags)}</span><br>`:''}${esc(r.note)}${r.source?`<br><small>出典：${esc(r.source)}</small>`:''}</td>${editor?`<td><button data-edit="${C.key(r)}" ${writable()?'':'disabled'}>編集</button></td>`:''}</tr>`).join('')}</tbody></table></div>`}
+function graph(data){const values=data.flatMap(r=>['p2','p4','p6'].map(k=>r[k])).filter(v=>typeof v==='number');if(!values.length){$('#chart').innerHTML='<div class="empty">グラフに表示できる数値がありません。</div>';return;}
+ const W=760,H=280,L=65,R=20,T=22,B=35,max=Math.max(...values,1)*1.12,start=Date.parse(data[0].date),end=Date.parse(data.at(-1).date),span=end-start||86400000;
+ const x=r=>L+(Date.parse(r.date)-start)/span*(W-L-R),y=v=>T+(1-v/max)*(H-T-B);
+ let svg=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="選択期間のボーダー推移。正確な数値は下の履歴表に表示。">`;
+ for(let i=0;i<5;i++){const v=max*i/4,yy=y(v);svg+=`<line x1="${L}" y1="${yy}" x2="${W-R}" y2="${yy}" stroke="#eaf0ec"/><text x="${L-10}" y="${yy+4}" text-anchor="end" font-size="11" fill="#93a298">${(v/10000).toFixed(1)}万</text>`;}
+ for(const [k,color] of [['p2','#279783'],['p4','#6489ca'],['p6','#c39553']]){let prev=null;for(const r of data){if(typeof r[k]!=='number'){prev=null;continue;}if(prev&&C.addDays(prev.date,1)===r.date)svg+=`<line x1="${x(prev)}" y1="${y(prev[k])}" x2="${x(r)}" y2="${y(r[k])}" stroke="${color}" stroke-width="2"/>`;svg+=`<circle cx="${x(r)}" cy="${y(r[k])}" r="3" fill="${color}"><title>${r.date} ＋${k.slice(1)}：${fmt(r[k])}</title></circle>`;prev=r;}}
+ [...new Set([0,Math.floor((data.length-1)/2),data.length-1])].forEach(i=>svg+=`<text x="${x(data[i])}" y="${H-8}" text-anchor="middle" font-size="11" fill="#93a298">${data[i].date.slice(5).replace('-','/')}</text>`);$('#chart').innerHTML=svg+'</svg>';}
+function render(){controls();const f=filters(),data=selected(),latest=[...data].reverse().find(r=>['p2','p4','p6'].some(k=>typeof r[k]==='number'));$('#latestDate').textContent=latest?`${f.rank} / ${latest.date}（${days[C.weekday(latest.date)]}）の記録`:'選択期間に数値の記録がありません';$('#cards').innerHTML=['p2','p4','p6'].map((k,i)=>{const s=C.stats(data,k);return `<article class="metric" style="--color:${['#279783','#6489ca','#c39553'][i]}"><span class="tag">＋${k.slice(1)} ボーダー</span><div class="num">${fmt(latest?.[k])} <small>pt</small></div><p>期間平均 ${fmt(s.mean)} <span>／ ${s.n}件</span></p></article>`}).join('');graph(data);
+ const day=C.weekday(C.today()),same=C.filter(rows,{...f,day});$('#weekdayTitle').textContent=`${days[day]}曜日の傾向`;$('#weekdayCards').innerHTML=['p2','p4','p6'].map(k=>{const s=C.stats(same,k);return `<div class="insight-row"><span>＋${k.slice(1)}</span><div><b>${fmt(s.mean)}</b><small>${s.n}件の記録</small></div></div>`}).join('');$('#recentTable').innerHTML=table([...data].reverse().slice(0,5));$('#recordCount').textContent=`${data.length}件の記録 ／ ${f.rank}（未記録は平均から除外）`;
+ $('#summary').innerHTML=`<div class="table-wrap"><table><thead><tr><th>ボーダー</th><th>平均</th><th>中央値</th><th>最小</th><th>最大</th><th>有効件数</th></tr></thead><tbody>${['p2','p4','p6'].map(k=>{const s=C.stats(data,k);return `<tr><td>＋${k.slice(1)}</td>${['mean','median','min','max','n'].map(v=>`<td class="number">${fmt(s[v])}</td>`).join('')}</tr>`}).join('')}</tbody></table></div>`;
+ $('#weekdayTable').innerHTML=`<div class="table-wrap"><table><thead><tr><th>曜日</th><th>＋2 平均 / 件数</th><th>＋4 平均 / 件数</th><th>＋6 平均 / 件数</th></tr></thead><tbody>${[1,2,3,4,5,6,0].map(d=>`<tr><td>${days[d]}</td>${['p2','p4','p6'].map(k=>{const s=C.stats(data.filter(r=>C.weekday(r.date)===d),k);return `<td class="number">${fmt(s.mean)} <small>/ ${s.n}件</small></td>`}).join('')}</tr>`).join('')}</tbody></table></div>`;
+ const pages=Math.max(1,Math.ceil(data.length/20));page=Math.min(page,pages);$('#historyTable').innerHTML=table([...data].reverse().slice((page-1)*20,page*20));$('#pageInfo').textContent=`${page} / ${pages}`;$('#prev').disabled=page<=1;$('#next').disabled=page>=pages;
+ const partial=data.filter(r=>['p2','p4','p6'].some(k=>r[k]==null)).length;const rankRows=C.filter(rows,{rank:f.rank});const from=f.start||rankRows[0]?.date,to=f.end||rankRows.at(-1)?.date;let missing=0;if(from&&to&&from<=to){const present=new Set(rankRows.map(r=>r.date));for(let d=from,n=0;d<=to&&n<20000;d=C.addDays(d,1),n++){if((f.day===''||C.weekday(d)===Number(f.day))&&!present.has(d))missing++;}}$('#missing').textContent=`一部または全部のポイントが未記録：${partial}件。${from&&to?`${from}〜${to}の記録がない日：${missing}日（検索・タグ除外の影響は含みません）。`:''}`;
+ $('#seedCount').textContent=`数値あり93件＋備考・欠測記録4件、計${BORDER_SEED.length}件。`;
+}
+function openRecord(record=null,date=null){if(!writable())return toast('編集可能な状態ではありません。');$('#recordForm').reset();editKey=record?C.key(record):null;editRev=record?.revision??null;fields.date.disabled=!!record;fields.rank.disabled=!!record;fields.date.value=record?.date||date||C.today();fields.rank.value=record?.rank||$('#rank').value;for(const k of ['p2','p4','p6','tags','source','note'])fields[k].value=record?.[k]??'';$('#formTitle').textContent=record?'記録を編集':'記録を追加';$('#deleteRecord').hidden=!record;$('#formError').textContent='';duplicateHint();if(!$('#recordDialog').open)$('#recordDialog').showModal();}
+function duplicateHint(){const existing=rows.find(r=>C.key(r)===fields.rank.value+'_'+fields.date.value);$('#duplicateHint').textContent=!editKey&&existing?'この日付・ランクは登録済みです。保存時に既存記録を開きます。':'曜日は日付から自動判定します。';}
+async function saveRecord(record,expected){const id=C.key(record);const result=await F.runTransaction(F.ref(db,'borderNote/records/'+id),current=>{if(expected===null?current!==null:current?.revision!==expected)return;return {...record,revision:(current?.revision||0)+1,updatedAt:F.serverTimestamp()};},{applyLocally:false});if(!result.committed)throw Error('別の端末で更新されたか、すでに登録されています。履歴から最新の記録を開き直してください。');}
+$('#recordForm').addEventListener('submit',async e=>{e.preventDefault();if(!writable())return;$('#formError').textContent='';try{const r=C.normalize(Object.fromEntries(['date','rank','p2','p4','p6','tags','source','note'].map(k=>[k,fields[k].value])));if(!editKey){const existing=rows.find(x=>C.key(x)===C.key(r));if(existing){openRecord(existing);toast('既存の記録を開きました。確認して保存してください。');return;}}const nums=['p2','p4','p6'].map(k=>r[k]);if(((nums[0]!=null&&nums[1]!=null&&nums[0]>nums[1])||(nums[1]!=null&&nums[2]!=null&&nums[1]>nums[2]))&&!confirm('ボーダーの大小関係が通常と異なります。この値で保存しますか？'))return;busy=true;controls();await saveRecord(r,editRev);$('#recordDialog').close();toast('保存しました。');busy=false;controls();if(e.submitter?.value==='next'){openRecord(null,C.addDays(r.date,1));fields.rank.value=r.rank;duplicateHint();}}catch(err){$('#formError').textContent=errorText(err);}finally{busy=false;render();}});
+$('#deleteRecord').onclick=async()=>{if(!writable()||!editKey||!confirm('この記録を削除しますか？元に戻すにはバックアップが必要です。'))return;busy=true;controls();try{const result=await F.runTransaction(F.ref(db,'borderNote/records/'+editKey),current=>current?.revision===editRev?null:undefined,{applyLocally:false});if(!result.committed)throw Error('記録が変更されています。開き直してください。');$('#recordDialog').close();toast('削除しました。');}catch(e){$('#formError').textContent=errorText(e);}finally{busy=false;render();}};
+async function importRecords(input){if(!writable())return;if(!Array.isArray(input)||input.length>10000)throw Error('取り込み件数は1〜10,000件の配列で指定してください。');const map=new Map();for(const item of input){const r=C.normalize(item),id=C.key(r);if(map.has(id))throw Error('ファイル内に同じ日付・ランクが重複しています：'+id);map.set(id,r);}const candidates=[...map.values()].filter(r=>!rows.some(x=>C.key(x)===C.key(r)));if(!candidates.length)return toast('新しく取り込む記録はありません。');if(!confirm(`${candidates.length}件を追加します。既存${input.length-candidates.length}件はスキップします。備考・引用元も公開されます。続行しますか？`))return;busy=true;controls();let count=0,skipped=0;try{for(const r of candidates){if(!connected||!editor)throw Error('接続または編集権限が失われました。');const result=await F.runTransaction(F.ref(db,'borderNote/records/'+C.key(r)),current=>current!==null?undefined:{...r,revision:1,updatedAt:F.serverTimestamp()},{applyLocally:false});if(result.committed)count++;else skipped++;notice(`取り込み中 ${count+skipped} / ${candidates.length}件`);}toast(`${count}件を登録しました。重複${skipped}件はスキップしました。`);notice('Firebase接続済み・変更をリアルタイムで共有しています。');}catch(e){throw Error(`${count}件登録済み。${errorText(e)} 再取込では登録済みの行をスキップします。`);}finally{busy=false;render();}}
+function download(name,data,type){const url=URL.createObjectURL(new Blob([data],{type})),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+$('#exportJSON').onclick=()=>download('border-note-'+C.today()+'.json',JSON.stringify({schemaVersion:1,exportedAt:new Date().toISOString(),records:rows.map(C.normalize)},null,2),'application/json');
+$('#exportCSV').onclick=()=>{const csvCell=v=>'"'+String(v??'').replace(/^[=+@\-]/,"'$&").replaceAll('"','""')+'"';const result=[['日付','ランク','+2','+4','+6','タグ','引用元','備考'],...selected().map(r=>[r.date,r.rank,r.p2,r.p4,r.p6,r.tags,r.source,r.note])];download('border-note-'+$('#rank').value+'.csv','\uFEFF'+result.map(r=>r.map(csvCell).join(',')).join('\r\n'),'text/csv;charset=utf-8');};
+let xlsxPromise;function loadXLSX(){if(window.XLSX)return Promise.resolve(window.XLSX);if(!xlsxPromise)xlsxPromise=new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js';s.onload=()=>resolve(window.XLSX);s.onerror=()=>{xlsxPromise=null;s.remove();reject(Error('Excel読込ライブラリを取得できません。通信を確認してください。'))};document.head.append(s)});return xlsxPromise;}
+async function excelRows(file){const X=await loadXLSX(),wb=X.read(await file.arrayBuffer(),{type:'array',cellDates:false}),result=[];for(const rank of C.ranks){if(!wb.Sheets[rank])continue;const data=X.utils.sheet_to_json(wb.Sheets[rank],{header:1,defval:null});for(let i=2;i<data.length;i++){const row=data[i];if(row.slice(3,6).every(v=>v==null)&&!row[6])continue;let date=row[1];if(typeof date==='number'){const d=X.SSF.parse_date_code(date,{date1904:!!wb.Workbook?.WBProps?.date1904});if(!d)throw Error(`${rank} ${i+1}行：日付が不正です。`);date=`${d.y}-${String(d.m).padStart(2,'0')}-${String(d.d).padStart(2,'0')}`;}try{result.push(C.normalize({date,rank,p2:row[3],p4:row[4],p6:row[5],note:row[6]|| (row.slice(3,6).includes('-')?'元Excel：未記録（－）':''),tags:'',source:''}));}catch(e){throw Error(`${rank} ${i+1}行：${e.message}`);}}}if(!result.length)throw Error('S1・S2・S3シートのB列日付、D〜F列ポイント、G列備考を確認してください。');return result;}
+$('#importFile').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>10*1024*1024)throw Error('ファイルは10MB以下にしてください。');let input;if(file.name.toLowerCase().endsWith('.json')){const parsed=JSON.parse(await file.text());input=Array.isArray(parsed)?parsed:parsed.records;}else input=await excelRows(file);await importRecords(input);}catch(err){toast(errorText(err));}finally{e.target.value='';}};
+$('#seedImport').onclick=()=>importRecords(BORDER_SEED).catch(e=>toast(errorText(e)));
+$('#authButton').onclick=async()=>{if(user){if(busy)return toast('保存処理が完了してからログアウトしてください。');try{await A.signOut(auth);toast('ログアウトしました。')}catch(e){toast(errorText(e))}}else $('#loginDialog').showModal()};
+$('#loginForm').onsubmit=async e=>{e.preventDefault();const b=e.submitter;b.disabled=true;$('#loginError').textContent='';try{await A.signInWithEmailAndPassword(auth,e.target.elements.email.value.trim(),e.target.elements.password.value);$('#loginDialog').close();e.target.reset();}catch(err){$('#loginError').textContent=errorText(err);}finally{b.disabled=false;}};
+$$('nav button').forEach(b=>b.onclick=()=>setView(b.dataset.view));$('.brand').onclick=e=>{e.preventDefault();setView('home')};$('#toHistory').onclick=()=>setView('history');$$('.newRecord').forEach(b=>b.onclick=()=>openRecord());$$('[data-close]').forEach(b=>b.onclick=()=>document.getElementById(b.dataset.close).close());document.addEventListener('click',e=>{const b=e.target.closest('[data-edit]');if(b)openRecord(rows.find(r=>C.key(r)===b.dataset.edit))});
+fields.date.onchange=fields.rank.onchange=duplicateHint;$('#prev').onclick=()=>{page--;render()};$('#next').onclick=()=>{page++;render()};
+for(const id of ['rank','day','exclude','query'])$('#'+id).addEventListener(id==='query'?'input':'change',()=>{page=1;render()});
+$('#period').onchange=()=>{const v=$('#period').value;if(v==='all'){$('#start').value='';$('#end').value=''}else if(v!=='custom'){$('#end').value=C.today();$('#start').value=C.addDays(C.today(),1-Number(v));}page=1;render()};
+for(const id of ['start','end'])$('#'+id).onchange=()=>{$('#period').value='custom';if($('#start').value&&$('#end').value&&$('#start').value>$('#end').value)toast('開始日が終了日より後になっています。');page=1;render()};
+async function boot(){const config=window.FIREBASE_CONFIG||{};if(!config.apiKey||!config.databaseURL||!config.projectId){preview=true;rows=BORDER_SEED.map(C.normalize);ready=true;notice('プレビュー：Excelの記録を表示しています。追加・編集・共有保存はFirebaseの設定後に利用できます。');render();return;}
+render();notice('Firebaseに接続しています…');try{const base='https://www.gstatic.com/firebasejs/13.1.0/';const [app,authMod,dbMod]=await Promise.all([import(base+'firebase-app.js'),import(base+'firebase-auth.js'),import(base+'firebase-database.js')]);A=authMod;F=dbMod;const instance=app.initializeApp(config);auth=A.getAuth(instance);db=F.getDatabase(instance);
+F.onValue(F.ref(db,'.info/connected'),s=>{connected=s.val()===true;if(!busy&&(!connected||ready))notice(connected?'Firebase接続済み・変更をリアルタイムで共有しています。':'接続待ち／オフラインです。保存は接続後に利用できます。',!connected);render()});
+F.onValue(F.ref(db,'borderNote/records'),s=>{const raw=s.val()||{};try{rows=Object.entries(raw).map(([id,r])=>{const n=C.normalize(r);if(C.key(n)!==id)throw Error('記録キーが不正です');return {...n,revision:r.revision,updatedAt:r.updatedAt}});ready=true;if(!busy&&connected)notice('Firebase接続済み・変更をリアルタイムで共有しています。');render();}catch(e){ready=false;notice('データ形式に問題があります：'+errorText(e),true);controls();}},e=>{ready=false;notice('記録を読み込めません。'+errorText(e),true);controls()});
+A.onAuthStateChanged(auth,u=>{unsubRole?.();user=u;editor=false;if(u?.uid==='vMb3v8PkNYQbQj9P56fbmRxlToz2'){editor=true;render();}else if(u)unsubRole=F.onValue(F.ref(db,'borderNote/editors/'+u.uid),s=>{editor=s.val()===true;render()},e=>{editor=false;render();toast(errorText(e))});else {unsubRole=null;if($('#recordDialog').open)$('#recordDialog').close();}render()});controls();}catch(e){ready=false;notice('接続に失敗しました。config.js・ネットワークを確認してください。 '+errorText(e),true);controls();}}
+boot();
+
+$('#copyRules').onclick=async()=>{try{await navigator.clipboard.writeText($('#rulesText').value);toast('ルールをコピーしました。');}catch(e){$('#rulesText').focus();$('#rulesText').select();toast('ルールを選択しました。Ctrl+Cなどでコピーしてください。');}};
+</script></body></html>
